@@ -16,4 +16,8 @@ class Fraction(object):
         self.num = self.denom
         self.denom = x
         return Fraction(self.num, self.denom)
-    
+    def __str__(self):
+        return str(self.num) + '/' + str(self.denom)
+
+point = Fraction(8,9)
+print(point)
